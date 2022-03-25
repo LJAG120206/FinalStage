@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CustomerSuccess{% endblock %}
+
+{% block body %}
+    <h1>CustomerSuccess</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ customer_success.id }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ customer_success.email }}</td>
+            </tr>
+            <tr>
+                <th>Civilite</th>
+                <td>{{ customer_success.civilite }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ customer_success.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ customer_success.nom }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ customer_success.telephone }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_customer_success_index') }}">back to list</a>
+
+    <a href="{{ path('app_customer_success_edit', {'id': customer_success.id}) }}">edit</a>
+
+    {{ include('customer_success/_delete_form.html.twig') }}
+{% endblock %}

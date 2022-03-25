@@ -1,0 +1,3 @@
+<?php //route_name_a41d73917e397217643c78a2c635e0fe
+
+return [PHP_INT_MAX, 'api_categories_experts_get_subresource'];

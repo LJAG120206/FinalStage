@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CustomerSuccess index{% endblock %}
+
+{% block body %}
+    <h1>CustomerSuccess index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Civilite</th>
+                <th>Prenom</th>
+                <th>Nom</th>
+                <th>Telephone</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for customer_success in customer_successes %}
+            <tr>
+                <td>{{ customer_success.id }}</td>
+                <td>{{ customer_success.email }}</td>
+                <td>{{ customer_success.civilite }}</td>
+                <td>{{ customer_success.prenom }}</td>
+                <td>{{ customer_success.nom }}</td>
+                <td>{{ customer_success.telephone }}</td>
+                <td>
+                    <a href="{{ path('app_customer_success_show', {'id': customer_success.id}) }}">show</a>
+                    <a href="{{ path('app_customer_success_edit', {'id': customer_success.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_customer_success_new') }}">Create new</a>
+{% endblock %}

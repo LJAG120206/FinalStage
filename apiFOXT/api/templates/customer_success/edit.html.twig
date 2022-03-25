@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit CustomerSuccess{% endblock %}
+
+{% block body %}
+    <h1>Edit CustomerSuccess</h1>
+
+    {{ include('customer_success/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_customer_success_index') }}">back to list</a>
+
+    {{ include('customer_success/_delete_form.html.twig') }}
+{% endblock %}

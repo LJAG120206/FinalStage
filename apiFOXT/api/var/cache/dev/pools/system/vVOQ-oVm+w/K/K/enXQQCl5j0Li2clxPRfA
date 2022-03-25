@@ -1,0 +1,31 @@
+<?php //subresource_operations_8243b3aeb656f2826da1e677d22a76da
+
+return [PHP_INT_MAX, [
+    'api_categories_experts_get_subresource' => [
+        'property' => 'experts',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\Experts',
+        'shortNames' => [
+            'Experts',
+            'Categories',
+        ],
+        'identifiers' => [
+            'id' => [
+                'App\\Entity\\Categories',
+                'id',
+                true,
+            ],
+        ],
+        'operation_name' => 'experts_get_subresource',
+        'route_name' => 'api_categories_experts_get_subresource',
+        'path' => '/categories/{id}/experts.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+        'stateless' => null,
+    ],
+]];

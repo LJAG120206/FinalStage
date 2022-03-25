@@ -1,0 +1,3 @@
+<?php //route_name_eb932d5636400a7e7c673fe144a40130
+
+return [PHP_INT_MAX, 'api_chemins_get_collection'];

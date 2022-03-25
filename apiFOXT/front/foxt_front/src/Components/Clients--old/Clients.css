@@ -1,0 +1,20 @@
+#formulaire
+{
+    width: 70%;
+    height: 600px;
+    background-color: rgb(255, 153, 19);
+}
+
+.headerContainer
+{
+    width: 100%;
+}
+
+.title
+{
+    line-height: 200px;
+    font-size: 50px;
+    vertical-align: text-bottom;
+    text-align: middle;
+    font-weight: 700;
+}

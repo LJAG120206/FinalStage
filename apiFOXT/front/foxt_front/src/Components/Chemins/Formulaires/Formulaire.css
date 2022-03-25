@@ -1,0 +1,28 @@
+#formulaire-chemin
+{
+    width: 70%;
+    height: 170px;
+    background-color: rgb(255, 153, 19);
+}
+
+#logo_foxt
+{
+    width: 200px;
+    height: 200px;    
+    text-align: end;
+  
+}
+
+.headerContainer
+{
+    width: 100%;
+}
+
+.title
+{
+    line-height: 200px;
+    font-size: 50px;
+    vertical-align: text-bottom;
+    text-align: middle;
+    font-weight: 700;
+}

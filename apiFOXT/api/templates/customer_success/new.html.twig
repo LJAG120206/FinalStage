@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New CustomerSuccess{% endblock %}
+
+{% block body %}
+    <h1>Create new CustomerSuccess</h1>
+
+    {{ include('customer_success/_form.html.twig') }}
+
+    <a href="{{ path('app_customer_success_index') }}">back to list</a>
+{% endblock %}

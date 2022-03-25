@@ -1,0 +1,31 @@
+<?php //subresource_operations_0979ec286cf2c01ebb7718728e9d9d07
+
+return [PHP_INT_MAX, [
+    'api_customer_successes_clients_get_subresource' => [
+        'property' => 'clients',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\Clients',
+        'shortNames' => [
+            'Clients',
+            'CustomerSuccess',
+        ],
+        'identifiers' => [
+            'id' => [
+                'App\\Entity\\CustomerSuccess',
+                'id',
+                true,
+            ],
+        ],
+        'operation_name' => 'clients_get_subresource',
+        'route_name' => 'api_customer_successes_clients_get_subresource',
+        'path' => '/customer_successes/{id}/clients.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+        'stateless' => null,
+    ],
+]];

@@ -1,0 +1,23 @@
+.select
+{
+    text-align: center;
+   
+    margin-bottom:10px;
+}
+
+.select label
+{
+    display:block;
+    text-align: left;
+    width:100%;
+}
+
+.select select
+{
+    display:block;
+    width:60%;
+    box-sizing:border-box;
+    height: 30px;
+}
+
+
